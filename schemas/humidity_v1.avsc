@@ -1,0 +1,22 @@
+{
+   "type":"record",
+   "name":"humidity_sensors",
+   "namespace":"demo",
+   "fields": [
+      {
+         "name":"id",
+         "type": "int"
+      },
+      {
+         "name":"timestamp",
+         "type": "long"
+      },
+      {
+         "name":"humidity",
+         "type":[
+            "null",
+            "float"
+         ]
+      }
+   ]
+}

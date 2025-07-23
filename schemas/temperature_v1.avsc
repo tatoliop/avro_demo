@@ -1,0 +1,22 @@
+{
+   "type":"record",
+   "name":"temperature_sensors",
+   "namespace":"demo",
+   "fields": [
+      {
+         "name":"id",
+         "type": "int"
+      },
+      {
+         "name":"timestamp",
+         "type": "long"
+      },
+      {
+         "name":"temperature",
+         "type":[
+            "null",
+            "float"
+         ]
+      }
+   ]
+}
