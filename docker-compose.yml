@@ -6,7 +6,7 @@ services:
     hostname: zookeeper
     container_name: zookeeper
     networks:
-      - gnomon_arch_test
+      - demo_net
     ports:
       - "2181:2181"
     environment:
@@ -21,7 +21,7 @@ services:
     hostname: kafka
     container_name: kafka
     networks:
-      - gnomon_arch_test
+      - demo_net
     ports:
       - "29092:29092"
       - "9092:9092"
@@ -42,7 +42,7 @@ services:
     hostname: kafdrop
     container_name: kafdrop
     networks:
-      - gnomon_arch_test
+      - demo_net
     ports:
       - "9007:9000"
     environment:
@@ -54,7 +54,7 @@ services:
 
 
 networks:
-  gnomon_arch_test:
+  demo_net:
 
 volumes:
   zookeeper_data:
